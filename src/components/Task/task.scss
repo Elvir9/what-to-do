@@ -1,0 +1,22 @@
+@import '../../styles/colors.scss';
+
+.form-task-container {
+    width: 290px;
+    .submit-task-container {
+        display: flex;
+        justify-content: center;
+
+        .ui.button.submit-task-button {
+            background-color: $button-color;
+            color: $white-color;
+
+            &:hover{
+                background-color: $hover-color;
+                color: $white-color;
+            }
+        }
+    }
+    .ui.form {
+        margin-bottom: 40px;
+    }
+}
