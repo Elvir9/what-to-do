@@ -77,15 +77,18 @@ const TaskForm: FC = () => {
             <Form.Field>
                 <label>Add new task</label>
                 <input
-                    type="text"
+                    id='TaskInputField'
+                    type='text'
                     placeholder="What's on your mind?"
                     name='task'
                     onChange={handleChange}
                     value={task}
+                    aria-label='newTaskLabel'
                 />
                 </Form.Field>
                 <div className='submit-task-container'>
                     <Button
+                        id='AddTaskButton'
                         className='submit-task-button'
                         type='button'
                         onClick={handleAddTask}

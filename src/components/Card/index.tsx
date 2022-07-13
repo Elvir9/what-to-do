@@ -38,7 +38,7 @@ const TodoCard = ({
     return (
         <>
             <Card.Group>
-                <Card className={completedTaskClassName(isTaskCompleted)}>
+                <Card id='CardContent' className={completedTaskClassName(isTaskCompleted)}>
                 <Card.Content>
                 {
                 !isEditMode && (
